@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>big boned</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <button class="hamburger-button" onclick="toggleSidebar()">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+    </button>
+
+    <div class="sidebar">
+        <a href="#" class="sidebar-link" onclick="showPage('activities')">Fun Activities</a>
+        <a href="#" class="sidebar-link" onclick="showPage('learning')">Learning Corner</a>
+        <a href="#" class="sidebar-link" onclick="showPage('parents')">Parents' Guide</a>
+        <a href="#" class="sidebar-link" onclick="showPage('safety')">Safety Tips</a>
+        <div class="sidebar-divider"></div>
+        <a href="#" class="sidebar-link" onclick="showPage('faq')">FAQ</a>
+        <a href="#" class="sidebar-link" onclick="showPage('contact')">Contact Us</a>
+        <a href="#" class="sidebar-link" onclick="showPage('info')">Information</a>
+        <a href="#" class="sidebar-link" onclick="showPage('join')">Join Us</a>
+    </div>
+
+    <div class="main-container expanded">
+        <div class="header">
+            <h1>big boned kids</h1>
+        </div>
+
+        <div class="content">
+            <div id="activities" class="page active">
+                <h2>🎨 Fun Activities</h2>
+                <div class="activity-container">
+                    <div class="activity-card">
+                        <h3>Indoor Adventures</h3>
+                        <ul>
+                            <li>Create a blanket fort</li>
+                            <li>Have a dance party</li>
+                            <li>Start a family book club</li>
+                            <li>Cook together</li>
+                        </ul>
+                    </div>
+                    <div class="activity-card">
+                        <h3>Outdoor Fun</h3>
+                        <ul>
+                            <li>Plant a small garden</li>
+                            <li>Go on a nature scavenger hunt</li>
+                            <li>Create sidewalk chalk art</li>
+                            <li>Have a bubble-blowing contest</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="learning" class="page">
+                <h2>📚 Learning Corner</h2>
+                <div class="activity-container">
+                    <div class="activity-card">
+                        <h3>Educational Games</h3>
+                        <ul>
+                            <li>Count objects around the house</li>
+                            <li>Practice writing letters with finger paint</li>
+                            <li>Sort toys by color or size</li>
+                            <li>Create stories together</li>
+                        </ul>
+                    </div>
+                    <div class="activity-card">
+                        <h3>Weekly Reading Challenge</h3>
+                        <ul>
+                            <li>Read a new book every week</li>
+                            <li>Draw your favorite character</li>
+                            <li>Create a story map</li>
+                            <li>Act out the story</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="parents" class="page">
+                <h2>👪 Parents' Guide</h2>
+                <div class="resource-list">
+                    <li>
+                        <h3>Daily Routines</h3>
+                        <p>Establish consistent schedules for meals, playtime, and bedtime.</p>
+                    </li>
+                    <li>
+                        <h3>Screen Time Guidelines</h3>
+                        <p>Balance digital activities with physical play and creative time.</p>
+                    </li>
+                    <li>
+                        <h3>Healthy Snack Ideas</h3>
+                        <p>Quick and nutritious options for growing minds and bodies.</p>
+                    </li>
+                </div>
+            </div>
+
+            <div id="safety" class="page">
+                <h2>🛡️ Safety First!</h2>
+                <div class="resource-list">
+                    <li>
+                        <h3>Online Safety</h3>
+                        <p>Tips for keeping children safe while using devices and the internet.</p>
+                    </li>
+                    <li>
+                        <h3>Home Safety Checklist</h3>
+                        <p>Essential safety measures for a child-friendly home environment.</p>
+                    </li>
+                    <li>
+                        <h3>Emergency Contacts</h3>
+                        <p>Keep important numbers handy and teach children how to use them.</p>
+                    </li>
+                </div>
+            </div>
+
+            <div id="faq" class="page">
+                <h2>❓ Frequently Asked Questions</h2>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-question">What age group is this website for?</div>
+                        <div class="faq-answer">Our activities and content are designed for families with children aged 3-12 years old.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">Are the activities safe for children?</div>
+                        <div class="faq-answer">Yes! All activities are designed with safety in mind and recommend parent supervision where needed.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">How often is new content added?</div>
+                        <div class="faq-answer">We update our activities and resources weekly to keep things fresh and exciting!</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contact" class="page">
+                <h2>📧 Contact Us</h2>
+                <div class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+                    <button class="nav-button">Send Message</button>
+                </div>
+            </div>
+
+            <div id="info" class="page">
+                <h2>ℹ️ Information</h2>
+                <div class="activity-card">
+                    <h3>About Us</h3>
+                    <p>Fun Family Zone is dedicated to providing quality family activities and educational resources. Our team of educators and child development experts work together to create engaging content for families.</p>
+                </div>
+            </div>
+
+            <div id="join" class="page">
+                <h2>🤝 Join Our Community</h2>
+                <div class="activity-card">
+                    <h3>Membership Benefits</h3>
+                    <ul>
+                        <li>Access to exclusive activities</li>
+                        <li>Weekly newsletter with new ideas</li>
+                        <li>Member-only events</li>
+                        <li>Priority support</li>
+                    </ul>
+                    <button class="nav-button">Sign Up Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>contact info: smth smth</p>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
